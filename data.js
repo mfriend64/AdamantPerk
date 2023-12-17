@@ -826,19 +826,19 @@
           desc: ['Bashes also deals damage to Magicka and Stamina.'],
           req: [40],
           pos: [40, -65],
-          deps: [6],
+          deps: [7],
 		}, {
           name: 'Bashing Expertise',
           desc: ['Bashing cost 50% less Stamina.'],
           req: [80],
           pos: [104, -101],
-          deps: [7],
+          deps: [8],
 		}, {
           name: 'Battering Ram',
           desc: ['Power bashing an enemy below half Health has a chance to knock them to the ground.'],
           req: [100],
           pos: [39, -146],
-          deps: [8],
+          deps: [9],
         }
       ]
     }, {
