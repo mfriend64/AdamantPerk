@@ -852,14 +852,14 @@
           req: [10,50],
           pos: [0, 0],
         }, {
-          name: 'Deep Cuts',
+          name: 'Deep Wounds',
 		  levels: 2,
           desc: ['Greatswords have a 10% chance of doing critical damage.','Greatswords have a 20% chance of doing critical damage.'],
           req: [20,70],
           pos: [-30, -39],
           deps: [0],
 		}, {
-          name: 'Mortal Wound',
+          name: 'Heavy Cuts',
 		  levels: 2,
           desc: ['Critical attacks with greatswords deal three times more damage.','Critical attacks with greatswords deal five times more damage.'],
           req: [40,90],
@@ -886,20 +886,20 @@
           deps: [3],
 		}, {
           name: 'Massacre',
-          desc: ['Power attacks with Two-handed weapons deal 50% more damage to targets who fall below half Health.'],
+          desc: ['Power attacks with Two-handed weapons deal 50% extra damage to targets who fall below half Health.'],
           req: [80],
           pos: [27, -80],
           deps: [3],
 		}, {
           name: 'Rampage',
-          desc: ['Repeated power attacks with Two-handed weapons against a single target deal up to double damage.'],
+          desc: ['Repeated power attacks against a single target with Two-handed weapons deal up to double damage.'],
           req: [100],
           pos: [6, -200],
           deps: [4,6]
 		}, {
           name: 'Rip and Tear',
 		  levels: 2,
-          desc: ['Battleaxes deal extra damage over 5 seconds.','Battleaxes deal extra damage over 10 seconds.'],
+          desc: ['Battleaxes deal damage over time.','Battleaxes deal more damage over a longer time.'],
           req: [20, 70],
           pos: [38, -47],
           deps: [0],
@@ -911,16 +911,16 @@
           pos: [58, -74],
           deps: [8],
 		}, {
-          name: 'Armor Crusher',
+          name: 'Bone Crusher',
 		  levels: 2,
-          desc: ['Warhammers reduce enemy Armor Rating by 150 for 10 seconds.','Warhammers reduce enemy Armor Rating by 300 for 10 seconds.'],
+          desc: ['Warhammers reduce enemy armor rating by 150 for 10 seconds.','Warhammers reduce enemy armor rating by 300 for 10 seconds.'],
           req: [20, 70],
           pos: [46, -35],
           deps: [0],
 		}, {
           name: 'Skull Cracker',
 		  levels: 2,
-          desc: ['Warhammers deal extra damage to Magicka and Stamina.','Warhammers deal even more damage to Magicka and Stamina.'],
+          desc: ['Warhammers deal 25% extra damage to staggered targets.','Warhammers deal 50% extra damage to staggered targets.'],
           req: [40,90],
           pos: [88, -71],
           deps: [10],
@@ -971,7 +971,7 @@
           deps: [3],
 		}, {
           name: 'Execute',
-          desc: ['Power attacks with One-handed weapons deal 50% more damage to targets who fall below half Health.'],
+          desc: ['Power attacks with One-handed weapons deal 50% extra damage to targets who fall below half Health.'],
           req: [80],
           pos: [15, -87],
           deps: [3],
@@ -1005,23 +1005,29 @@
 		}, {
           name: 'Bell Ringer',
 		  levels: 2,
-          desc: ['Maces deal extra damage to Magicka and Stamina.','Maces deal even more damage to Magicka and Stamina.'],
+          desc: ['Maces deal 25% extra damage to staggered targets.','Maces deal 50% extra damage to staggered targets.'],
           req: [40,90],
           pos: [58, -62],
           deps: [10],
 		}, {
-          name: 'Dual Flurry',
-          desc: ['You attack 20% faster while dual wielding.'],
-          req: [40],
+          name: 'Dual Focus',
+          desc: ['Dual wield power attacks cost 25% less Stamina.'],
+          req: [20],
           pos: [82, -18],
           deps: [0],
 		}, {
           name: 'Dual Frenzy',
 		  levels: 2,
           desc: ['Dual wield power attacks deal 25% more damage.','Dual wield power attacks deal 50% more damage.'],
-          req: [70,90],
+          req: [40,90],
           pos: [79, -52],
           deps: [12],
+		}, {
+          name: 'Dual Fury',
+          desc: ['You resist 25% of all incoming damage while dual wielding.'],
+          req: [70],
+          pos: [76, -86],
+          deps: [13],
         }
       ]
     }, {
