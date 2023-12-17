@@ -15,7 +15,7 @@
           name: 'Intensity',
 		  levels: 2,
           desc: ['Poisons last for two extra hits.','Poisons last for four extra hits.'],
-          req: [30,60],
+          req: [30,70],
           pos: [-57, -12],
           deps: [0],
 		}, {
@@ -41,8 +41,8 @@
 		}, {
           name: 'Concentration',
 		  levels: 2,
-          desc: ['Potions last 50% longer.','Potions last twice as long.'],
-          req: [30,60],
+          desc: ['Potions last 50% longer.','Potions last 100% longer.'],
+          req: [30,70],
           pos: [63, -12],
           deps: [0],
 		}, {
@@ -54,7 +54,7 @@
           deps: [5],
 		}, {
           name: 'Chemist',
-          desc: ['You create twice as many potions or poisons from the same number of ingredients.'],
+          desc: ['You create twice as many potions and poisons from the same number of ingredients.'],
           req: [100],
           pos: [6, -153],
           deps: [2, 6],
@@ -79,43 +79,44 @@
 		}, {
           name: 'Tranquility',
           desc: ['Silence spells dispel any magical effects on the target.'],
-          req: [70],
+          req: [60],
           pos: [-43, -57],
           deps: [1],
 		}, {
           name: 'Stasis',
-          desc: ['Paralysis spells last three times as long.'],
-          req: [90],
+          desc: ['Paralysis spells last three times longer.'],
+          req: [80],
           pos: [-48, -98],
           deps: [2],
 		}, {
           name: 'Captivating Presence',
 		  levels: 2,
-          desc: ['Illusion spells last 50% longer.','Illusion spells last twice as long.'],
+          desc: ['Illusion spells last 50% longer.','Illusion spells last 100% longer.'],
           req: [20,60],
-          pos: [13, -43],
+          pos: [13, -56],
           deps: [0],
 		}, {
           name: 'Indomitable Will',
 		  levels: 2,
-          desc: ['Illusion spells are 50% stronger.','Illusion spells are twice as strong.'],
+          desc: ['Illusion spells are 50% stronger.','Illusion spells are 100% stronger.'],
           req: [40,80],
-          pos: [-12, -60],
+          pos: [-12, -73],
           deps: [4],
 		}, {
           name: 'Master of the Mind',
-          desc: ['Illusion spells work on undead, daedra and automatons.'],
-          req: [100],
+		levels: 2,
+          desc: ['Your Illusion spells affect the undead.','Your Illusion spells affect the undead, Daedra, and Dwarven automatons.'],
+          req: [60,100],
           pos: [3, -116],
           deps: [5],
 		}, {
           name: 'Howl of Rage',
           desc: ['Frenzy spells increase the target\'s weapon damage by 50% against everyone except the caster.'],
-          req: [30],
+          req: [40],
           pos: [52, -29],
           deps: [0],
 		}, {
-          name: 'Aspect of Terror',
+          name: 'Cry of Terror',
           desc: ['Fear spells reduce the target\'s Armor Rating by 150 and their Magic Resistance by 25%.'],
           req: [70],
           pos: [44, -54],
@@ -125,7 +126,13 @@
           desc: ['Command spells increase the target\'s Armor Rating by 150 and their Magic Resistance by 25%.'],
           req: [90],
           pos: [45, -90],
-          deps: [8],		
+          deps: [8],
+		 }, {
+          name: 'Guidance',
+          desc: ['Courage spells last three times longer.'],
+          req: [30],
+          pos: [-23, -36],
+          deps: [0],
         }
       ]
     }, {
