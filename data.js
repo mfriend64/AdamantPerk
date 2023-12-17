@@ -177,27 +177,27 @@
 		  levels: 2,
           desc: ['Reanimated zombies last five times longer.','Reanimated zombies last until killed.'],
           req: [20,80],
-          pos: [-32, -22],
+          pos: [-28, -22],
           deps: [0],
 		}, {
           name: 'False Life',
 		  levels: 2,
           desc: ['Reanimated zombies move 25% faster.','Reanimated zombies move 50% faster.'],
           req: [30,70],
-          pos: [-47, -50],
+          pos: [-43, -50],
           deps: [5],
 		}, {
           name: 'Corpse Preparation',
           desc: ['Reanimated zombies no longer disintegrate when they die.'],
           req: [40],
-          pos: [-47, -90],
+          pos: [-44, -90],
           deps: [6],
 		}, {
           name: 'Necropotence',
 		levels: 2,
           desc: ['Reanimated zombies regenerate Magicka and Stamina over time.','Reanimated zombies regenerate Health, Magicka, and Stamina over time.'],
           req: [60,90],
-          pos: [-34, -126],
+          pos: [-30, -126],
           deps: [7],
 		}, {
           name: 'Doors of Oblivion',
@@ -252,8 +252,9 @@
           pos: [0, 0],
         }, {
           name: 'Rune Mage',
-          desc: ['You can maintain up to three runes at once.'],
-          req: [40],
+		levels: 2,
+          desc: ['You can maintain up to two runes at once.','You can maintain up to three runes at once.'],
+          req: [30,60],
           pos: [-39, -3],
           deps: [0],
 		}, {
@@ -266,7 +267,7 @@
 		}, {
           name: 'Firebrand',
 		  levels: 2,
-          desc: ['Fire spells brand enemies for 10 seconds. Branded targets take 25% extra damage from Fire spells.','Fire spells brand enemies for 10 seconds. Branded targets take 50% extra damage from Fire spells.'],
+          desc: ['Fire spells brand enemies for 10 seconds. Branded targets take 25% extra damage from fire spells.','Fire spells brand enemies for 10 seconds. Branded targets take 50% extra damage from fire spells.'],
           req: [60,90],
           pos: [-46, -52],
           deps: [2],
@@ -304,7 +305,7 @@
           deps: [7],
 		}, {
           name: 'Deep Freeze',
-          desc: ['Frost spells have a chance to encase enemies in ice when they fall below half Health.'],
+          desc: ['Frost spells have a chance to freeze targets who fall below half Health.'],
           req: [100],
           pos: [2, -114],
           deps: [8],
@@ -341,14 +342,8 @@
           pos: [31, -1],
           deps: [0],
 		}, {
-          name: 'Symmetry',
-          desc: ['Destruction cloak spells last twice as long when dual cast.'],
-          req: [60],
-          pos: [78, -40],
-          deps: [14],
-		}, {
           name: 'Impact',
-          desc: ['Destruction spells have a 50% chance to stagger an opponent when dual cast.'],
+          desc: ['Destruction spells have a 50% chance to stagger enemies when dual cast.'],
           req: [40],
           pos: [62, -10],
           deps: [14],		
@@ -362,7 +357,7 @@
           name: 'Healer',
 		  levels: 2,
           desc: ['Restoration spells cost 25% less Magicka.','Restoration spells cost 50% less Magicka.'],
-		  req: [10,50],
+		req: [10,50],
           pos: [0, 0],
         }, {
           name: 'Pilgrim',
@@ -386,9 +381,10 @@
           pos: [-75, -43],
           deps: [2],
 		}, {
-          name: 'Ward Absorb',
-          desc: ['Wards recharge your magicka when hit with spells.'],
-          req: [60],
+          name: 'Affliction',
+		levels: 2,
+          desc: ['Poison spells deal 25% more damage.','Poison spells deal 50% more damage'],
+          req: [30,70],
           pos: [-25, -35],
           deps: [0],
 		}, {
@@ -401,15 +397,15 @@
 		}, {
           name: 'Scourge',
 		  levels: 2,
-          desc: ['Poison spells deal 50% extra damage to targets who fall below half Health.','Poison spells deal double damage to targets who fall below half Health.'],
+          desc: ['Poison spells deal 50% extra damage to targets who fall below half Health.','Poison spells deal 100% extra damage to targets who fall below half Health.'],
           req: [80,100],
           pos: [-98, -82],
           deps: [5],
 		}, {
           name: 'Recovery',
 		  levels: 2,
-          desc: ['Healing spells are 50% stronger.','Healing spells are twice as strong.'],
-          req: [20,60],
+          desc: ['Healing spells are 50% stronger.','Healing spells are 100% stronger.'],
+          req: [20,70],
           pos: [2, -43],
           deps: [0],
 		}, {
@@ -420,7 +416,7 @@
           deps: [7],
 		}, {
           name: 'Repose',
-          desc: ['Regeneration and Attunement spells last twice as long.'],
+          desc: ['Regeneration, Attunement, and Circle spells last twice as long.'],
           req: [60],
           pos: [25, -71],
           deps: [7],
@@ -437,14 +433,14 @@
           pos: [-30, -140],
           deps: [10],
 		}, {
-          name: 'Radiant Ward',
-          desc: ['Ward spells cost 50% less Magicka.'],
+          name: 'Empowered Ward',
+          desc: ['Ward spells resist 50% of incoming weapon damage.'],
           req: [20],
           pos: [26, -37],
           deps: [0],
 		}, {
-          name: 'Empowered Ward',
-          desc: ['Ward spells resist 50% of incoming weapon damage.'],
+          name: 'Radiant Ward',
+          desc: ['Ward spells cost 50% less Magicka.'],
           req: [40],
           pos: [50, -63],
           deps: [12],
@@ -457,7 +453,7 @@
 		}, {
           name: 'Dawn\'s Wrath',
 		  levels: 2,
-          desc: ['Turn Undead spells are 50% stronger.','Turn Undead spells are twice as strong.'],
+          desc: ['Turn Undead spells are 50% stronger.','Turn Undead spells are 100% stronger.'],
           req: [40,80],
           pos: [40, -23],
           deps: [0],
@@ -469,7 +465,7 @@
           deps: [15],
 		}, {
           name: 'Illumination',
-          desc: ['Regeneration, Attunement, and Circle spells last twice as long when dual cast.'],
+          desc: ['Regeneration and Attunement spells last three times as long when dual cast.'],
           req: [40],
           pos: [106, -31],
           deps: [0],
