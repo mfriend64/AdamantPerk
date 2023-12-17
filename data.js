@@ -545,6 +545,13 @@
           req: [70],
           pos: [108, -136],
           deps: [8],
+		}, {
+          name: 'Spell Strike',
+		levels: 2,
+          desc: ['Unarmed attacks deal elemental damage while under the effects of an elemental shield spell.','Unarmed attacks deal even more elemental damage while under the effects of an elemental shield spell.'],
+          req: [20,90],
+          pos: [11, -156],
+          deps: [8],
         }
       ]
     }, {
