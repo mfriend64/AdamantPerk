@@ -483,17 +483,17 @@
 		  req: [10,50],
           pos: [0, 0],
         }, {
-          name: 'Mage Armor',
-		  levels: 2,
-          desc: ['Armor spells are 50% stronger while wearing robes.','Armor spells are twice as strong while wearing robes.'],
-          req: [20,70],
-          pos: [-17, -30],
-          deps: [0],
-		}, {
           name: 'Mage Robes',
 		  levels: 2,
-          desc: ['You gain 50% Magicka Regeneration while wearing robes.','You gain 100% Magicka Regeneration while wearing robes'],
-          req: [30, 60],
+          desc: ['You have 50% extra Magicka Regeneration while wearing robes.','You have 100% extra Magicka Regeneration while wearing robes.'],
+          req: [20,60],
+          pos: [-24, -30],
+          deps: [0],
+		}, {
+          name: 'Mage Armor',
+		  levels: 2,
+          desc: ['Armor spells are 50% stronger while wearing robes.','Armor spells are 100% stronger while wearing robes.'],
+          req: [30, 70],
           pos: [-24, -99],
           deps: [1],
 		}, {
@@ -510,7 +510,7 @@
           deps: [2],
 		}, {
           name: 'Barrier',
-          desc: ['Protection spells like Oakflesh and Fire Shell last twice as long when dual cast.'],
+          desc: ['Protection spells like Oakflesh and Fire Shell last three times as long when dual cast.'],
           req: [40],
           pos: [-1, -41],
           deps: [0],
@@ -523,13 +523,13 @@
 		}, {
           name: 'Balance',
 		  levels: 2,
-          desc: ['Alteration spells last 50% longer.','Alteration spells last twice as long.'],
+          desc: ['Alteration spells last 50% longer.','Alteration spells last 100% longer.'],
           req: [30,60],
-          pos: [18, -30],
+          pos: [20, -30],
           deps: [0],
 		}, {
-          name: 'Backlash',
-          desc: ['You reflect a portion of incoming melee damage back at your attacker while under the effects of a flesh spell.'],
+          name: 'Stability',
+          desc: ['You resist 50% of incoming stagger while under the effects of an armor spell.'],
           req: [40],
           pos: [20, -99],
           deps: [7],
