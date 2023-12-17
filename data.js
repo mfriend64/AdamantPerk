@@ -20,21 +20,22 @@
           deps: [0],
 		}, {
           name: 'Solvency',
-          desc: [' Poisons you make are 25% more effective.'],
-          req: [80],
+		levels: 2,
+          desc: ['Poisons you make are 25% more effective.','Poisons you make are 50% more effective.'],
+          req: [60,90],
           pos: [-23, -87],
           deps: [1],
+		}, {
+			name: 'Experimenter',
+          desc: ['Eating an ingredient reveals all its effects.'],
+          req: [20],
+          pos: [23, -38],
+          deps: [0],
 		}, {
           name: 'Green Thumb',
 		  levels: 2,
           desc: ['You gather one extra ingredient from plants.','You gather two extra ingredients from plants.'],
-          req: [20, 70],
-          pos: [23, -38],
-          deps: [0],
-		}, {
-          name: 'Experimenter',
-          desc: ['Eating an ingredient reveals all its effects.'],
-          req: [40],
+          req: [40, 80],
           pos: [-6, -54],
           deps: [3],
 		}, {
@@ -46,22 +47,17 @@
           deps: [0],
 		}, {
           name: 'Potency',
-          desc: ['Potions you mix are 25% stronger.'],
-          req: [80],
+		levels: 2,
+          desc: ['Potions you mix are 25% stronger.','Potions you mix are 50% stronger.'],
+          req: [60,90],
           pos: [30, -89],
           deps: [5],
-		}, {
-          name: 'Purity',
-          desc: ['All negative effects are removed from created potions, and all positive effects are removed from created poisons.'],
-          req: [90],
-          pos: [6, -153],
-          deps: [2, 6],
 		}, {
           name: 'Chemist',
           desc: ['You create twice as many potions or poisons from the same number of ingredients.'],
           req: [100],
-          pos: [6, -225],
-          deps: [7],
+          pos: [6, -153],
+          deps: [2, 6],
         }
       ]
     }, {
