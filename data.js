@@ -582,7 +582,7 @@
           name: 'Jewelry Enchanter',
           desc: ['New enchantments on jewelry are 25% stronger.'],
           req: [30],
-          pos: [-30, -117],
+          pos: [-24, -100],
           deps: [0],
 		}, {
           name: 'Armor Enchanter',
@@ -594,7 +594,7 @@
           name: 'Corpus Enchanter',
           desc: ['Health, Magicka, and Stamina enchantments are 25% stronger.'],
           req: [60],
-          pos: [30, -117],
+          pos: [24, -100],
           deps: [0],
 		}, {
           name: 'Elemental Enchanter',
