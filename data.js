@@ -1404,20 +1404,20 @@
           name: 'Minstrel',
           desc: ['Your bard songs last three times as long.'],
           req: [40],
-          pos: [-41, -55],
-          deps: [7],
+          pos: [-41, -39],
+          deps: [6],
 		}, {
           name: 'Skald',
           desc: ['Your bard songs are twice as strong on your allies.'],
           req: [80],
           pos: [-29, -65],
-          deps: [7],
+          deps: [6],
 		}, {
           name: 'Troubadour',
           desc: ['Your bard songs affect your summoned or reanimated minions.'],
           req: [40],
-          pos: [-19, -53],
-          deps: [7],
+          pos: [-19, -37],
+          deps: [6],
         }
       ]
     }
