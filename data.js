@@ -1226,7 +1226,7 @@
         {
           name: 'Pugilist',
 		  levels: 2,
-          desc: ['Unarmed attacks deal 25% more damage.','Unarmed attacks deal 50% more damage.'],
+          desc: ['You deal 25% extra damage with unarmed strikes.','You deal 50% extra damage with unarmed strikes.'],
           req: [10,50],
           pos: [0, 0],
         }, {
@@ -1239,45 +1239,45 @@
 		}, {
           name: 'Brawler\'s Stance',
 		  levels: 2,
-          desc: ['Unarmed power attacks deal 25% more damage.','Unarmed power attacks deal 50% more damage.'],
+          desc: ['Your unarmed power attacks deal 25% extra damage.','Your unarmed power attacks deal 50% extra damage.'],
           req: [30,60],
           pos: [-1, -47],
           deps: [0],
 		}, {
           name: 'Overwhelm',
-          desc: ['Unarmed power attacks deal 50% extra damage to targets who are power attacking, drawing a bow, or casting a spell.'],
+          desc: ['Your unarmed power attacks deal 50% extra damage against targets that are power attacking, drawing a bow, or casting a spell.'],
           req: [40],
           pos: [-78, -111],
           deps: [2],
 		}, {
           name: 'Finisher',
-          desc: ['Unarmed power attacks deal 50% more damage to targets who fall below half Health.'],
+          desc: ['Your unarmed power attacks deal 50% extra damage against targets that fall below half Health.'],
           req: [80],
           pos: [-42, -180],
           deps: [3],
 		}, {
           name: 'Brace',
-          desc: ['You resist 25% of all incoming damage while unarmed.'],
+          desc: ['You take 25% less damage while unarmed.'],
           req: [70],
           pos: [-2, -122],
           deps: [2],
 		}, {
           name: 'Momentum',
 		  levels: 2,
-          desc: ['Unarmed power attacks cost 25% less Stamina.','Unarmed power attacks cost 50% less Stamina.'],
+          desc: ['Unarmed attacks are 20% faster.','Unarmed attacks are 40% faster.'],
           req: [40,70],
           pos: [70, -109],
           deps: [2],
 		}, {
           name: 'Knockout',
-          desc: ['Unarmed power attacks have a chance to knock down enemies when they fall below half Health.'],
+          desc: ['UYour unarmed power attacks deal 50% extra damage against targets that fall below half Health.'],
           req: [100],
           pos: [36, -180],
           deps: [6],
 		}, {
           name: 'Heavy Blows',
 		  levels: 2,
-          desc: ['Unarmed attacks deal Stamina damage.','Unarmed attacks deal extra Stamina damage and prevent enemies from regenerating Stamina for 10 seconds.'],
+          desc: ['Your unarmed strikes deal Stamina damage.','Your unarmed strikes deal extra Stamina damage, and prevent enemies from regenerating Stamina for 10 seconds.'],
           req: [40,90],
           pos: [40, -37],
           deps: [0],
@@ -1290,7 +1290,7 @@
         {
           name: 'Collector',
 		  levels: 2,
-          desc: ['You are 25% more likely to succeed at lockpicking and pickpocketing.','You are 50% more likely to succeed at lockpicking and pickpocketing.'],
+          desc: ['You are 25% better at lockpicking and pickpocketing.','You are 50% better at lockpicking and pickpocketing.'],
           req: [10,50],
           pos: [0, 0],
         }, {
@@ -1302,14 +1302,14 @@
 		}, {
           name: 'Poisoner',
 		  levels: 2,
-          desc: ['Poisons that you place in enemy pockets are 50% stronger.','Poisons that you place in enemy pockets are twice as strong.'],
+          desc: ['Poisons that you place in enemy pockets are 50% extra damage.','Poisons that you place in enemy pockets are 100% extra damage.'],
           req: [30,60],
           pos: [-60, -34],
           deps: [1],
 		}, {
           name: 'Sleight of Hand',
 		  levels: 2,
-          desc: ['You are 50% more likely to succeed against targets who are not detecting you.','You are twice as likely to succeed against targets who are not detecting you.'],
+          desc: ['You are 50% more likely to succeed at pickpocketing while undetected.','You are twice as likely to succeed at pickpocketing while undetected.'],
           req: [30,70],
           pos: [-37, -70],
           deps: [1],
@@ -1347,7 +1347,7 @@
           name: 'Deep Pockets',
 		  levels: 2,
           desc: ['Your Carry Weight is increased by 50.','Your Carry Weight is increased by 100.'],
-          req: [40,80],
+          req: [40,70],
           pos: [30, -34],
           deps: [1],		
         }
