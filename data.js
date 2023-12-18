@@ -1385,14 +1385,14 @@
           name: 'Investor',
           desc: ['You can invest in a shopkeeper’s business to increase their available gold.'],
           req: [90],
-          pos: [16, -98],
+          pos: [20, -98],
           deps: [2],
 		}, {
           name: 'Entrepreneur',
           desc: ['You can sell any item to any merchant in Tamriel.'],
           req: [100],
           pos: [34, -120],
-          deps: [3],
+          deps: [4],
         }
       ]
     }
