@@ -1393,6 +1393,31 @@
           req: [100],
           pos: [34, -120],
           deps: [4],
+		}, {
+          name: 'Bard',
+		levels: 2,
+          desc: ['Your bard songs are twice as strong.','Your bard songs are twice as strong and grant an additional bonus to you and your allies.'],
+          req: [30,60],
+          pos: [-30, -23],
+          deps: [0],
+		}, {
+          name: 'Minstrel',
+          desc: ['Your bard songs last three times as long.'],
+          req: [40],
+          pos: [-41, -55],
+          deps: [7],
+		}, {
+          name: 'Skald',
+          desc: ['Your bard songs are twice as strong on your allies.'],
+          req: [80],
+          pos: [-29, -65],
+          deps: [7],
+		}, {
+          name: 'Troubadour',
+          desc: ['Your bard songs affect your summoned or reanimated minions.'],
+          req: [40],
+          pos: [-19, -53],
+          deps: [7],
         }
       ]
     }
